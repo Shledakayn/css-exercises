@@ -27,3 +27,34 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* SOLUTION */
+
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  padding: 0px 16px;
+  margin: 0px;
+  font-weight: 900;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 600px;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cards {
+  display: flex;
+    justify-content: center;
+  align-items: center;
+}

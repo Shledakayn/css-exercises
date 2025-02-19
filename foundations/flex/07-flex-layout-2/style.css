@@ -43,18 +43,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 600px;
+  /* margin-top: 600px; */
 }
 
-.sidebar {
+.content {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 8px;
+  flex-direction: row;
 }
 
-.cards {
+
+
+.cards, .card {
   display: flex;
-    justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  align-self: center;
+  /* flex-basis: 300px; */
+  padding: 48px;
+  gap: 20px;
 }

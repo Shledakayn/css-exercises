@@ -30,6 +30,11 @@ body {
 
 /* SOLUTION */
 
+body {
+  flex-shrink: 0;
+}
+
+
 .header {
   display: flex;
   align-items: center;
@@ -37,6 +42,7 @@ body {
   padding: 0px 16px;
   margin: 0px;
   font-weight: 900;
+  flex-shrink: 0;
 }
 
 .footer {
@@ -44,20 +50,50 @@ body {
   align-items: center;
   justify-content: center;
   /* margin-top: 600px; */
+  flex-shrink: 0;
+
 }
 
 .content {
   display: flex;
   flex-direction: row;
+  flex-shrink: 0;
+
 }
 
+.sidebar, ul, a {
 
+  display: flex;
+  width: 300px;
+  font-weight: 500;
+  font-size: 24px;
+  gap: 20px;
+  padding: 0px 16px 16px 0px;
+  text-decoration: none;
+  flex-direction: column;
+  list-style-type: none;
+  color: #eee;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
 
-.cards, .card {
+}
+
+/* .cards, .card {
   display: flex;
   flex-direction: row;
-  align-self: center;
-  /* flex-basis: 300px; */
   padding: 48px;
   gap: 20px;
+  margin-bottom: 30px;
+  flex-basis: auto;
+} */
+
+.left, .center, .right {
+
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+
 }
+
+
